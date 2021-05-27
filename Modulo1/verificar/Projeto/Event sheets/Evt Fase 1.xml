@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Evt Fase 1</name>
+    <events>
+        <event-block sid="774814870711569">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="836118202846822" type="Herói">
+                    <param id="0" name="Object">Água</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="598163685645433" type="Herói">
+                    <param id="0" name="Object">ÁguaTopo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="913579422648381" type="Herói">
+                    <param id="0" name="Instance variable">var_Estado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492406567866641">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="707276407137658" type="Herói">
+                    <param id="0" name="Object">Água</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="801854687263853" type="Herói">
+                    <param id="0" name="Instance variable">var_Estado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="787723484430275">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="742504590666840" type="Herói">
+                    <param id="0" name="Object">ÁguaTopo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="433609354081139" type="Herói">
+                    <param id="0" name="Instance variable">var_Estado</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="Quando o Herói não esta sobre a Água e nem sobre a águaTopo" sid="836395428020477" title="Estado 0">
+            <sub-events>
+                <event-block sid="811929019105178">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="564571577142637" type="Herói">
+                            <param id="0" name="Instance variable">var_Estado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="477563107819536" type="Herói">
+                            <param id="0" name="Gravity">1000</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="999554826364552" type="Herói">
+                            <param id="0" name="Max Speed">330</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="428395455928801" type="Herói">
+                            <param id="0" name="Max fall speed">1500</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="655348053298059">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="367163156023696" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="308446626039387" type="Herói">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="736367641669090" type="Herói">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="468331059061347">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="444773323675954" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="217325342023275" type="Herói">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="513598317395212" type="Herói">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="662482406733599">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="239577284003522" type="Keyboard">
+                                    <param id="0" name="Key">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="882883572004922" type="Herói">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description='Quando o Herói está sobre o objetos &quot;Água&quot;' sid="361807397334477" title="Estado 1">
+            <sub-events>
+                <event-block sid="475463561113543">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="907478092054092" type="Herói">
+                            <param id="0" name="Instance variable">var_Estado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="575448472224471" type="Herói">
+                            <param id="0" name="Gravity">200</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="445086517976523" type="Herói">
+                            <param id="0" name="Max Speed">150</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="670851189256799" type="Herói">
+                            <param id="0" name="Max fall speed">100</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="700232225729092">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="446220898882868" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="999262352205123" type="Herói">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="397527551033142" type="Herói">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329905755803414">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="278923906087379" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="391926958791891" type="Herói">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="947646824590581" type="Herói">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="694946451419301">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="897883000497441" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="375393666272779" type="Herói">
+                                    <param id="0" name="Vector Y">-100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description='Quando o Herói está sobre o objetos &quot;águaTopo&quot;' sid="577595379310289" title="Estado 2">
+            <sub-events>
+                <event-block sid="789538183620571">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="596892949450385" type="Herói">
+                            <param id="0" name="Object">ÁguaTopo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="582323701941390" type="Herói">
+                            <param id="0" name="Object">Gotas</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">Herói.X</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="261191669656332" type="Herói">
+                            <param id="0" name="Object">ÁguaEspirra</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">Herói.X</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="491334200678006" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="504233253955566" type="Gotas" />
+                        <action id="-9" name="Destroy" sid="238853922079379" type="ÁguaEspirra" />
+                    </actions>
+                </event-block>
+                <event-block sid="498346180828341">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="139531457469406" type="Herói">
+                            <param id="0" name="Instance variable">var_Estado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="223923443738070" type="Herói">
+                            <param id="0" name="Gravity">200</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="422856528504537" type="Herói">
+                            <param id="0" name="Max Speed">150</param>
+                        </action>
+                        <action behavior="Platform" id="6" name="Set max fall speed" sid="879271936966625" type="Herói">
+                            <param id="0" name="Max fall speed">100</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="101002783312364">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="623338767358198" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="725933706543911" type="Herói">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="751869125988317" type="Herói">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536081644715335">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="389855219433289" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="941369820923461" type="Herói">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="212573534669018" type="Herói">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="566004780327320">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="298292577706978" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="861589614436443" type="Herói">
+                                    <param id="0" name="Vector Y">-500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="837605016144552">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="278849097275692" type="Herói">
+                    <param id="0" name="Object">ÁguaTopo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="808449362879442" type="Herói">
+                    <param id="0" name="Object">Gotas</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">Herói.X</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="156517634693292" type="ÁguaEspirra">
+                    <param id="0" name="Object">ÁguaEspirra</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">Herói.X</param>
+                </action>
+                <action id="-16" name="Wait" sid="293722388683218" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Destroy" sid="125727090121450" type="Gotas" />
+                <action id="-9" name="Destroy" sid="472565964992748" type="ÁguaEspirra" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Primeiro Projeto</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3urdcgbwl3z5q</unique-id>
+    <saved-with-version>24500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Fundo_Layout" sid="886924061797863">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Aluno\Desktop\Primeiro Projeto\Fundo contínuo.png" />
+        </object-type>
+        <object-type name="Personagem" sid="394162532576349">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="281275976457253">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="194417448040403">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141785552205061" speed="5">
+                    <frame duration="1" hotspotX="0.414634" hotspotY="0.515152" original-source="C:\Users\Aluno\Desktop\Primeiro Projeto\Personagem 1.png">
+                        <collision-poly>
+                            <point x="0.121951" y="0.363636" />
+                            <point x="0.414634" y="0.136364" />
+                            <point x="0.902439" y="0.242424" />
+                            <point x="0.97561" y="0.5" />
+                            <point x="0.902439" y="0.772727" />
+                            <point x="0.414634" y="0.863636" />
+                            <point x="0.121951" y="0.651515" />
+                            <point x="0.0487805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="813517956367508">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="802102470861543">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879298589207737" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\Primeiro Projeto\Chão.png">
+                        <collision-poly>
+                            <point x="0.0194805" y="0.0441176" />
+                            <point x="0.5" y="0" />
+                            <point x="0.980519" y="0.0441176" />
+                            <point x="0.980519" y="0.5" />
+                            <point x="0.928571" y="0.838235" />
+                            <point x="0.5" y="0.970588" />
+                            <point x="0.0584416" y="0.867647" />
+                            <point x="0.0194805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Primeiro Layout.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Primeiro Evento.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Plataforma Agua</name>
+    <description></description>
+    <version>1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>xnmqp9t013yf</unique-id>
+    <saved-with-version>24500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML 5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Preview mode">HTTP</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Herói" sid="685286932294680">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="var_Estado" sid="716273989179727" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="447022406994626">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="522310554758924">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145986566830107" speed="4">
+                    <frame duration="15" hotspotX="0.506944" hotspotY="0.752">
+                        <collision-poly>
+                            <point x="0.173611" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.096" />
+                            <point x="0.909722" y="0.5" />
+                            <point x="0.826389" y="0.9" />
+                            <point x="0.5" y="0.948" />
+                            <point x="0.173611" y="0.9" />
+                            <point x="0.0902778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="0.5" hotspotX="0.506944" hotspotY="0.752">
+                        <collision-poly>
+                            <point x="0.173611" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.096" />
+                            <point x="0.909722" y="0.5" />
+                            <point x="0.826389" y="0.9" />
+                            <point x="0.5" y="0.948" />
+                            <point x="0.173611" y="0.9" />
+                            <point x="0.0902778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506944" hotspotY="0.752">
+                        <collision-poly>
+                            <point x="0.173611" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.096" />
+                            <point x="0.909722" y="0.5" />
+                            <point x="0.826389" y="0.9" />
+                            <point x="0.5" y="0.948" />
+                            <point x="0.173611" y="0.9" />
+                            <point x="0.0902778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chão" sid="963236065983716">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="735782418033455">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Água" sid="905315812825734">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="ÁguaTopo" sid="116661922156308">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Keyboard" sid="469153968130544">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Fundo" sid="786399155038216">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341088635428982" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gotas" sid="655532687048015">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883907625789182" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ÁguaEspirra" sid="648289780855855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958277737538187" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Portal" sid="627865514342503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619946033840329" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Fase 1.xml</layout>
+        <layout>Fase 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Evt Fase 1.xml</event-sheet>
+        <event-sheet>Evt Fase 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="122" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

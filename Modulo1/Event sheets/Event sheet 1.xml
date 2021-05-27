@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="604474468244279">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="231531565263523" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="800748588045067" type="caixa">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
